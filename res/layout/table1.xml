@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<pvt.hrk.and.ScrollingTable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:id="@+id/scroll">
+    <TableLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/HeaderTable">
+	<TableRow style="@style/HeaderRow" android:id="@+id/headerrow">
+    </TableRow>
+    </TableLayout>
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:fillViewport="true">
+        <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <TableLayout android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/BodyTable">
+
+        </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</pvt.hrk.and.ScrollingTable>
